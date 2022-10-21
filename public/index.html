@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7EDFNY96B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G7EDFNY96B');
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix</title>
+  <link rel="icon" type="image/x-icon" href="/images/Matrix Logo Rounded.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9a27498582.js" crossorigin="anonymous"></script>
+</head>
+ 
+<body bgcolor="black">
+  <div class="page-bg"></div>
+  <div class="page-bg2"></div>
+  <div class="page-bg3"></div>
+  <div class="page-bg4"></div>
+  <section class="header">
+    <nav>
+      <img src="images/Matrix Logo Full.png"></img>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#" onclick="hidePopup()">HOME</a></li>
+          <li><a href="#" onclick="openPopup(about)">ABOUT</a></li>
+          <li><a href="#" onclick="openPopup(stats)">STATS</a></li>
+          <li><a href="#" onclick="openPopup(perks)">PERKS</a></li>
+          <li><a href="#" onclick="openPopup(apply)">APPLY</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Hypixel's #1 Guild</h1>
+      <p>An Active Community With Regular Events</p>
+      <a href="https://discord.com/invite/3Yj2ggz" target="_blank" class="hero-btn">MATRIX DISCORD</a>
+    </div>
+  </section>
+ 
+  <section class="blocker" id="blocker" onclick="hidePopup()"></section>
+  <section class="about" id="about">
+    <div class="glass">
+      <h1 class="fadeLine">ABOUT</h1>
+      <img src="images/Housing.png"></img>
+      <p>Matrix is a guild started on 2nd May, 2014 originally called Bravo created as a private guild. In late 2016, we decided to revamp and open 
+        up our guild for everyone, changing our name to Matrix in December 2019.</p><br>
+      <p>After the guild update, the guild grew rapidly, becoming one of the first 
+        guilds to reach level 100, later passing Rebel to become the #1 overall guild in hypixel on 14th January, 2022!</p>
+    </div>
+  </section>
+ 
+  <section class="stats" id="stats">
+    <div class="glass">
+      <h1 class="fadeLine">STATS</h1>
+      <img src="images/Leaderboards.png"></img>
+      <p style="font-weight: 600; font-size: 2.5rem; color: #ffffff; text-align: center;">Guild Ranks</p>
+      <div class="stats-container">
+        <div class="stats-wrapper">
+          <img src="images/Level.png"></img>
+          <span class="label">Guild Level 198</span>
+        </div>
+        <div class="stats-wrapper">
+          <img src="images/Duels.png"></img>
+          <span class="label">Duels Rank 2</span>
+        </div>
+        <div class="stats-wrapper">
+          <i class="fa fa-star" style="font-weight: 900; font-size: 32px; margin: 10px 0; padding: 10px 24px 8px 15px;"></i>
+          <span class="label">Legacy Rank 13</span>
+        </div>
+        <div class="stats-wrapper">
+          <img src="images/BedWars.png"></img>
+          <span class="label">BedWars Rank 4</span>
+        </div>
+        <div class="stats-wrapper">
+          <img src="images/Arcade.png"></img>
+          <span class="label">Arcade Rank 2</span>
+        </div>
+        <div class="stats-wrapper">
+          <img src="images/MurderMystery.png"></img>
+          <span class="label">Murder Mystery Rank 6</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="perks" id="perks">
+    <div class="glass">
+      <h1 class="fadeLine">PERKS</h1>
+      <div class="perks-img">
+        <div class="perks-wrapper">
+          <img src="images\Matrix Link.png"></img>
+        </div>
+        <div class="perks-wrapper">
+          <img src="images\Arcade Guild.png"></img>
+        </div>
+      </div>
+      <ul>
+        <li>100% chance for double gold and xp</li>
+        <li>Frequent guild events / tournaments / giveaways</li>
+        <li>Talk in guild chat from discord using Matrix Link</li>
+        <li>Active discord with 4k+ members</li>
+        <li>Custom yellow [Matrix] guild tag</li>
+        <li>Hypixel guild cloaks</li>
+        <li>Custom guild capes</li>
+      </ul>
+    </div>
+  </section>
+ 
+  <section class="apply" id="apply">
+    <div class="glass">
+      <h1 class="fadeLine">APPLY</h1>
+    </div>
+  </section>
+ 
+  <!-- Footer -->
+  <section class="footer">
+    <h4>Made by <a href="https://github.com/BridgeSenseMC" target="_blank">BridgeSense</a></h4>
+  </section>
+ 
+  <script>
+    let navLinks = document.getElementById('navLinks');
+    let popups = [];
+    let index = 2;
+ 
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+ 
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+ 
+    function openPopup(section) {
+      popups.push(section);
+      section.style.zIndex = index.toString();
+      index += 1;
+      section.classList.add('openPopup');
+      blocker.classList.add('openBlocker');
+    }
+ 
+    function hidePopup() {
+      blocker.classList.remove('openBlocker');
+      for (let i = 0; i < popups.length; i++) {
+        if (popups[i].classList.contains('about')) {
+          about.classList.remove('openPopup');
+          about.classList.add('closePopup');
+          about.addEventListener("transitionend", () => {
+            about.classList.remove('closePopup');
+          }, { once: true });
+        } 
+        if (popups[i].classList.contains('stats')) {
+          stats.classList.remove('openPopup');
+          stats.classList.add('closePopup');
+          stats.addEventListener("transitionend", () => {
+            stats.classList.remove('closePopup');
+          }, { once: true });
+        }
+        if (popups[i].classList.contains('perks')) {
+          perks.classList.remove('openPopup');
+          perks.classList.add('closePopup');
+          perks.addEventListener("transitionend", () => {
+            perks.classList.remove('closePopup');
+          }, { once: true });
+        }
+        if (popups[i].classList.contains('apply')) {
+          apply.classList.remove('openPopup');
+          apply.classList.add('closePopup');
+          apply.addEventListener("transitionend", () => {
+            apply.classList.remove('closePopup');
+          }, { once: true });
+        }
+      }
+      popups = [];
+      index = 2;
+    }
+  </script>
+</body>
+ 
+</html>
