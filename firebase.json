@@ -18,6 +18,10 @@
       {
         "source": "/forums",
         "destination": "/forums.html"
+      },
+      {
+        "source": "/sheets",
+        "destination": "/sheets.html"
       }
     ]
   }

@@ -3,19 +3,20 @@
  
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7EDFNY96B"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XKJXSE05D"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-G7EDFNY96B');
+    gtag('config', 'G-6XKJXSE05D');
   </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matrix</title>
-  <link rel="icon" type="image/x-icon" href="/images/Matrix Logo Rounded.png">
+  <meta name="description" content="Dominance is the number 1 guild on the Hypixel Network. Join us now to become a part of our massive community!">
+  <title>Dominance</title>
+  <link rel="icon" type="image/x-icon" href="./images/Dominance Logo Transparent.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,74 +25,83 @@
   <script src="https://kit.fontawesome.com/9a27498582.js" crossorigin="anonymous"></script>
 </head>
  
-<body bgcolor="black">
-  <div class="page-bg"></div>
-  <div class="page-bg2"></div>
-  <div class="page-bg3"></div>
-  <div class="page-bg4"></div>
-  <section class="header">
+<body>
+  <div id="page-bg"></div>
+  <div id="page-bg-2"></div>
+  <section id="header">
     <nav>
-      <img src="images/Matrix Logo Full.png"></img>
-      <div class="nav-links" id="navLinks">
-        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+      <img src="images/Dominance Logo Full.png">
+      <div id="nav-links">
         <ul>
           <li><a href="#" onclick="hidePopup()">HOME</a></li>
-          <li><a href="#" onclick="openPopup(about)">ABOUT</a></li>
-          <li><a href="#" onclick="openPopup(stats)">STATS</a></li>
-          <li><a href="#" onclick="openPopup(perks)">PERKS</a></li>
-          <li><a href="#" onclick="openPopup(apply)">APPLY</a></li>
+          <li><a href="https://dominance.cf/discord" target="_blank">DISCORD</a></li>
+          <li><a href="https://dominance.cf/forums" target="_blank">FORUMS</a></li>
+          <li><a href="https://dominance.cf/sheets" target="_blank">SHEETS</a></li>
         </ul>
       </div>
-      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      <div id="nav-icons">
+        <ul>
+          <li><a href="https://dominance.cf/discord" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+          <li><a href="https://dominance.cf/forums" target="_blank"><i class="fa-solid fa-newspaper"></i></a></li>
+          <li><a href="https://dominance.cf/sheets" target="_blank"><i class="fa-solid fa-table"></i></a></li>
+        </ul>
+      </div>
     </nav>
-    <div class="text-box">
+    <div id="menu">
+      <ul>
+        <li style="--i:4"><a href="#" onclick="openPopup(about)">ABOUT</a></li>
+        <li style="--i:3"><a href="#" onclick="openPopup(stats)">STATS</a></li>
+        <li style="--i:2"><a href="#" onclick="openPopup(perks)">PERKS</a></li>
+        <li style="--i:1"><a href="#" onclick="openPopup(apply)">APPLY</a></li>
+      </ul>
+    </div>
+    <div id="title">
       <h1>Hypixel's #1 Guild</h1>
       <p>An Active Community With Regular Events</p>
-      <a href="https://discord.com/invite/3Yj2ggz" target="_blank" class="hero-btn">MATRIX DISCORD</a>
     </div>
   </section>
  
   <section class="blocker" id="blocker" onclick="hidePopup()"></section>
   <section class="about" id="about">
     <div class="glass">
-      <h1 class="fadeLine">ABOUT</h1>
-      <img src="images/Housing.png"></img>
-      <p>Matrix is a guild started on 2nd May, 2014 originally called Bravo created as a private guild. In late 2016, we decided to revamp and open 
-        up our guild for everyone, changing our name to Matrix in December 2019.</p><br>
-      <p>After the guild update, the guild grew rapidly, becoming one of the first 
-        guilds to reach level 100, later passing Rebel to become the #1 overall guild in hypixel on 14th January, 2022!</p>
+      <h1 class="glass-title">ABOUT</h1>
+      <img src="images/Housing.png" style="min-width: 250px;">
+      <p>Dominance is a guild started on May 2nd, 2014 as a private guild. Originally called Bravo, we reached level 100 on July 
+        3rd, 2020, later overtaking Rebel to become the #1 guild on January 14th, 2022.</p><br>
+      <p>Recently on August 31 2022, we became the first guild to reach level 200. Over the years, we've been through a lot of 
+        ups and down but we never give up and come out stronger every time.</p>
     </div>
   </section>
  
   <section class="stats" id="stats">
     <div class="glass">
-      <h1 class="fadeLine">STATS</h1>
-      <img src="images/Leaderboards.png"></img>
-      <p style="font-weight: 600; font-size: 2.5rem; color: #ffffff; text-align: center;">Guild Ranks</p>
-      <div class="stats-container">
+      <h1 class="glass-title">STATS</h1>
+      <img src="images/Leaderboards.png" style="min-width: 250px;">
+      <p style="font-weight: 600; font-size: 200%; color: #ffffff; text-align: center;">Guild Ranks</p>
+      <div id="stats-container">
         <div class="stats-wrapper">
-          <img src="images/Level.png"></img>
-          <span class="label">Guild Level 198</span>
+          <img src="images/Level.png">
+          <span class="stats-label">Guild Level 207</span>
         </div>
         <div class="stats-wrapper">
-          <img src="images/Duels.png"></img>
-          <span class="label">Duels Rank 2</span>
+          <img src="images/Duels.png">
+          <span class="stats-label">Duels Rank 2</span>
         </div>
         <div class="stats-wrapper">
-          <i class="fa fa-star" style="font-weight: 900; font-size: 32px; margin: 10px 0; padding: 10px 24px 8px 15px;"></i>
-          <span class="label">Legacy Rank 13</span>
+          <img src="images/Legacy.png">
+          <span class="stats-label">Legacy Rank 13</span>
         </div>
         <div class="stats-wrapper">
-          <img src="images/BedWars.png"></img>
-          <span class="label">BedWars Rank 4</span>
+          <img src="images/BedWars.png">
+          <span class="stats-label">BedWars Rank 4</span>
         </div>
         <div class="stats-wrapper">
-          <img src="images/Arcade.png"></img>
-          <span class="label">Arcade Rank 2</span>
+          <img src="images/Arcade.png">
+          <span class="stats-label">Arcade Rank 2</span>
         </div>
         <div class="stats-wrapper">
-          <img src="images/MurderMystery.png"></img>
-          <span class="label">Murder Mystery Rank 6</span>
+          <img src="images/MurderMystery.png">
+          <span class="stats-label">Murder Mystery Rank 6</span>
         </div>
       </div>
     </div>
@@ -99,21 +109,22 @@
  
   <section class="perks" id="perks">
     <div class="glass">
-      <h1 class="fadeLine">PERKS</h1>
-      <div class="perks-img">
+      <h1 class="glass-title">PERKS</h1>
+      <div id="perks-img">
         <div class="perks-wrapper">
-          <img src="images\Matrix Link.png"></img>
+          <img src="images/Matrix Link.png" style="min-width: 100px;">
         </div>
         <div class="perks-wrapper">
-          <img src="images\Arcade Guild.png"></img>
+          <img src="images/Arcade Guild.png" style="min-width: 250px;">
         </div>
       </div>
       <ul>
+        <li>Custom guild leaderboards for playtime, fkdr, stars, gexp etc.</li>
         <li>100% chance for double gold and xp</li>
         <li>Frequent guild events / tournaments / giveaways</li>
-        <li>Talk in guild chat from discord using Matrix Link</li>
+        <li>Talk in guild chat from discord using Dominance Link</li>
         <li>Active discord with 4k+ members</li>
-        <li>Custom yellow [Matrix] guild tag</li>
+        <li>Custom yellow [✧︎DOMIN✧︎] guild tag</li>
         <li>Hypixel guild cloaks</li>
         <li>Custom guild capes</li>
       </ul>
@@ -122,27 +133,37 @@
  
   <section class="apply" id="apply">
     <div class="glass">
-      <h1 class="fadeLine">APPLY</h1>
+      <h1 class="glass-title">APPLY</h1>
+      <div id="apply-img">
+        <div class="apply-wrapper">
+          <img src="images/app-1.png" style="min-width: 50px;">
+        </div>
+        <div class="apply-wrapper">
+          <img src="images/app-2.png" style="min-width: 50px;">
+        </div>
+        <div class="apply-wrapper">
+          <img src="images/app-3.png" style="min-width: 100px;">
+        </div>
+      </div>
+      <a href="https://dominance.cf/discord" target="_blank">
+        <img src="images/discord-button.png" style="width: 30vh;">
+      </a>
+      <ol>
+        <li>Join the guild discord and verify in #verification</li>
+        <li>Go to #applications and make an application</li>
+      </ol>
+      Applications are reviewed in under 24 hours and you can be invited to our guild once accepted anytime using our bot.</p><br>
     </div>
   </section>
  
   <!-- Footer -->
-  <section class="footer">
-    <h4>Made by <a href="https://github.com/BridgeSenseMC" target="_blank">BridgeSense</a></h4>
+  <section id="footer">
+    <h4>Made by <a href="https://github.com/BridgeSenseDev" target="_blank">BridgeSense</a></h4>
   </section>
  
   <script>
-    let navLinks = document.getElementById('navLinks');
     let popups = [];
     let index = 2;
- 
-    function showMenu() {
-      navLinks.style.right = "0";
-    }
- 
-    function hideMenu() {
-      navLinks.style.right = "-200px";
-    }
  
     function openPopup(section) {
       popups.push(section);
